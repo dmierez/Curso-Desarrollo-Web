@@ -11,9 +11,10 @@
 <body>
     <header class="header">
         <div>
-            <figure class="logo">
-                <img src="Diego Mierez.jpg" alt="Imagen de Diego Mierez" width="100" height="100">
-            </figure>
+            <div class="logo">
+                <img class="logo__image" src="Diego Mierez.jpg" alt="Imagen de Diego Mierez">
+                <p class="logo__diego">@DiegoMierez</p>
+            </div>
             <nav class="nav">
                 <ul>
                     <li>
@@ -31,30 +32,47 @@
     </header>
     <section class="hero">
         <h1>
-            Hola! Soy <strong>Diego Mierez </strong> Ingeniero de <strong>Procesos</strong> <br> apasionado por las matemáticas <br> y la tecnología.
+            Hola! Soy <strong>Diego Mierez </strong>, un apasionado <br>por los <strong>Procesos</strong>
+            y la <strong>Tecnología</strong>   🍎😀 
         </h1>
-        <img src="PortadaLean.png" alt="Imagen de portada" width="500" height="300">
+        <!-- <img src="PortadaLean.png" alt="Imagen de portada" width="500" height="300"> -->
     </section>
     <section id="proyectos" class="portafolio">
         <h2>Proyectos</h2>
-        <article class="proyectos">
-            <h3 class="proyectos__titulo">Escuelean</h3>
-            <h6 class="proyectos__tecnologias">React / Node.JS</h6>
-            <p class="proyectos__fecha"><small>Jun-2019</small></p>
-            <p class="proyectos__descripcion">Ecuelean es una plataforma de educación online en gestión de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing.</p>
+        <div class="portafolio__proyectos">
+            <div class="portafolio_detalles">
+                <h3 class="proyectos__titulo">Escuelean</h3>
+                <h6 class="proyectos__tecnologias">React / Node.JS</h6>
+                <p class="proyectos__fecha"><small>Jun-2019</small></p>
+                <p class="proyectos__descripcion">Ecuelean es una plataforma de educación online en gestión
+                de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing.</p>
+            </div> 
             <figure class="proyectos__imageContainer">
                 <img class="proyectos__image" src="Brumier chica.png" alt="logo de brumier">
             </figure>
-        </article>
+        </div>
+        <div class="portafolio__proyectos">
+            <div class="portafolio_detalles">
+                <h3 class="proyectos__titulo">Escuelean</h3>
+                <h6 class="proyectos__tecnologias">React / Node.JS</h6>
+                <p class="proyectos__fecha"><small>Jun-2019</small></p>
+                <p class="proyectos__descripcion">Ecuelean es una plataforma de educación online en gestión
+                de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing.</p>
+            </div> 
+            <figure class="proyectos__imageContainer">
+                <img class="proyectos__image" src="Brumier chica.png" alt="logo de brumier">
+            </figure>
+        </div>
     </section>
     <section id="experiencia">
         <h2>Más sobre mi experiencia</h2>
         <article class="experiencia">
             <figure class="experiencia__imageContainer">
-                <img class="experiencia__image" src="GoogleForStartups.png" alt="Evento de google for startups 2019" width="400"> 
+                <img class="experiencia__image" src="GoogleForStartups.png" alt="Evento de google" width="400"> 
             </figure>
             <h3 class="experiencia__title">Jaula de Negocios 2019</h3>
-            <p class="experiencia__descripcion">Participé como un emprendedor tecnológico en donde pude exponer el pitch de mi proyecto</p>
+            <p class="experiencia__descripcion">Participé como un emprendedor tecnológico en donde pude exponer
+            el pitch de mi proyecto</p>
         </article>
     </section>
     <section id="contacto" class="contacto">

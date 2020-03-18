@@ -1,3 +1,84 @@
 body {
     font-family: 'Muli', sans-serif;
+    margin: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+h1 {
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 25px;
+    margin-top: 0px;
+}
+
+h1 strong {
+    color: teal;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+.header {
+    background: #121212;
+    padding-bottom: 20px;
+}
+
+.logo__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo__diego {
+    font-weight: bold;
+    color: white;
+    margin: 0 0 0 8px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    height: 300px;
+    background-image: url('./PortadaLean.png');
+    background-color: black;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.portafolio {
+    background: #FAFFFC;
+    /* margin: 20px 0px; */
+}
+
+.portafolio_detalles {
+    width: 500px;
+}
+
+.portafolio__proyectos {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    margin-left: 35px;
+    padding: 10px 20px;
+    background: white
 }
