@@ -10,12 +10,16 @@
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="log-display">
             <div class="logo">
                 <img class="logo__image" src="Diego Mierez.jpg" alt="Imagen de Diego Mierez">
-                <p class="logo__diego">@DiegoMierez</p>
             </div>
-            <nav class="nav">
+            <div class="logo__diego">
+                <p>@DiegoMierez</p>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
                 <ul>
                     <li>
                         <a class="link" href="#proyectos">Proyectos</a>
@@ -33,22 +37,20 @@
     <section class="hero">
         <h1>
             Hola! Soy <strong>Diego Mierez </strong>, un apasionado <br>por los <strong>Procesos</strong>
-            y la <strong>Tecnología</strong>   🍎😀 
+            y la <strong>Tecnología</strong> 😀
         </h1>
-        <!-- <img src="PortadaLean.png" alt="Imagen de portada" width="500" height="300"> -->
     </section>
     <section id="proyectos" class="portafolio">
         <h2>Proyectos</h2>
         <div class="portafolio__proyectos">
             <div class="portafolio_detalles">
                 <h3 class="proyectos__titulo">Escuelean</h3>
-                <h6 class="proyectos__tecnologias">React / Node.JS</h6>
-                <p class="proyectos__fecha"><small>Jun-2019</small></p>
-                <p class="proyectos__descripcion">Ecuelean es una plataforma de educación online en gestión
-                de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing.</p>
+                <h6 class="proyectos__tecnologias">Stack MERN - MongoDB / Express / React / Node</h6>
+                <p class="proyectos__descripcion">Escuelean es una plataforma de educación online en gestión
+                de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing. <br><br>Este proyecto lo comencé en Enero de 2020 y combino mi pasión por la enseñanza y la tecnología.</p>
             </div> 
             <figure class="proyectos__imageContainer">
-                <img class="proyectos__image" src="Brumier chica.png" alt="logo de brumier">
+                <img class="proyectos__image" src="escuelean_project.png" alt="logo de brumier">
             </figure>
         </div>
         <div class="portafolio__proyectos">
@@ -79,11 +81,11 @@
         <form action="" class="formulario">
             <h3>¿Creamos un proyecto juntos?</h3>
             <input type="text" name="" id="" placeholder="Déjame tu mail">
-            <input type="submit">
+            <input class="enviar" type="submit">
         </form>
     </section>
     <footer class="footer">
-
+        <p>Diseñado por @DiegoMierez 😉</p>
     </footer>
 </body>
 </html>
