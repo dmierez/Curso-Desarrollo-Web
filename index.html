@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Diego Mierez</title>
     <link rel="icon" type="image/jpg" href="Diego Mierez.jpg">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -14,18 +16,15 @@
             <div class="logo">
                 <img class="logo__image" src="Diego Mierez.jpg" alt="Imagen de Diego Mierez">
             </div>
-            <div class="logo__diego">
-                <p>@DiegoMierez</p>
-            </div>
         </div>
-        <div class="nav">
+        <div class="menu">
             <nav>
                 <ul>
                     <li>
                         <a class="link" href="#proyectos">Proyectos</a>
                     </li>
                     <li>
-                        <a class="link" href="#experiencia">Experiencia</a>
+                        <a class="link" href="#experiencia">Eventos</a>
                     </li>
                     <li>
                         <a class="link" href="#contacto">Contacto</a>
@@ -34,18 +33,35 @@
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <h1>
-            Hola! Soy <strong>Diego Mierez </strong>, un apasionado <br>por los <strong>Procesos</strong>
-            y la <strong>Tecnología</strong> 😀
-        </h1>
-    </section>
+    
+    <main id="main">
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 portada_img" src="PortadaLean.png" alt="portada1">
+            </div>
+            <div class="overlay">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-12 text-center text-md-center">
+                    <h1 class="brumier">¡HOLA!</h1>
+                    <p class="d-none d-md-block hero_title">
+                        Soy <strong>Diego Mierez </strong>, un apasionado <br>por los <strong>Procesos</strong>
+                        y la <strong>Tecnología</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
     <section id="proyectos" class="portafolio">
         <h2>Proyectos</h2>
         <div class="portafolio__proyectos">
             <div class="portafolio_detalles">
                 <h3 class="proyectos__titulo">Escuelean</h3>
-                <h6 class="proyectos__tecnologias">Stack MERN - MongoDB / Express / React / Node</h6>
+                <h6 class="proyectos__tecnologias">Stack MERN - MongoDB / Express / React / Node</h6><br>
                 <p class="proyectos__descripcion">Escuelean es una plataforma de educación online en gestión
                 de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing. <br><br>Este proyecto lo comencé en Enero de 2020 y combino mi pasión por la enseñanza y la tecnología.</p>
             </div> 
@@ -53,36 +69,46 @@
                 <img class="proyectos__image" src="escuelean_project.png" alt="logo de brumier">
             </figure>
         </div>
-        <div class="portafolio__proyectos">
-            <div class="portafolio_detalles">
-                <h3 class="proyectos__titulo">Escuelean</h3>
-                <h6 class="proyectos__tecnologias">React / Node.JS</h6>
-                <p class="proyectos__fecha"><small>Jun-2019</small></p>
-                <p class="proyectos__descripcion">Ecuelean es una plataforma de educación online en gestión
-                de procesos industriales orientada a la enseñanza de metodologías Lean Manufacturing.</p>
-            </div> 
-            <figure class="proyectos__imageContainer">
-                <img class="proyectos__image" src="Brumier chica.png" alt="logo de brumier">
-            </figure>
-        </div>
     </section>
-    <section id="experiencia">
-        <h2>Más sobre mi experiencia</h2>
+    <h2 class="event-title">Eventos</h2>
+    <section id="experiencia" class="eventos">
         <article class="experiencia">
-            <figure class="experiencia__imageContainer">
-                <img class="experiencia__image" src="GoogleForStartups.png" alt="Evento de google" width="400"> 
-            </figure>
-            <h3 class="experiencia__title">Jaula de Negocios 2019</h3>
-            <p class="experiencia__descripcion">Participé como un emprendedor tecnológico en donde pude exponer
-            el pitch de mi proyecto</p>
+            <img class="experiencia__image" src="GoogleForStartups.png" alt="Evento de google" width="400"> 
+            <div class="evento__detalle">
+                <h3 class="experiencia__title">Google For Startups</h3>
+                <p class="experiencia__descripcion">Participé como un emprendedor tecnológico en donde pude exponer
+                el pitch de mi proyecto. Fui seleccionado dentro de las 10 startups ganadoras entre más 150 que participaron.</p>
+            </div>
+        </article>
+        <article class="experiencia">
+            <img class="experiencia__image" src="UNSAM.png" alt="Evento de google" width="400">
+            <div class="evento__detalle">
+                <h3 class="experiencia__title">UNSAM</h3>
+                <p class="experiencia__descripcion">Participé como referente en marketing digital en una clase del posgrado en Marketing para la Universidad Nacional de San Martin.
+                Expuse mi proyecto y conté los desafíos de emprender.</p>
+            </div>
+        </article>
+        <article class="experiencia">
+            <img class="experiencia__image" src="startups.png" alt="Evento de google" width="400">
+            <div class="evento__detalle">
+                <h3 class="experiencia__title">Startups In-Love</h3>
+                <p class="experiencia__descripcion">Participé como emprendedor y expositor del evento contando mi experiencia dentro del mundo de las startups.
+                Evento a nivel nacional auspiciado por Telefónica Open Future.</p>
+            </div>
         </article>
     </section>
     <section id="contacto" class="contacto">
-        <form action="" class="formulario">
-            <h3>¿Creamos un proyecto juntos?</h3>
-            <input type="text" name="" id="" placeholder="Déjame tu mail">
-            <input class="enviar" type="submit">
-        </form>
+            <h3>¿Hacemos un proyecto juntos?</h3>
+            <p>Te dejo mi contacto</p>
+            <div class="mail">
+                <img src="icons-gmail.png" alt="icono mail">
+                <span>dmierez@gmail.com</span>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/diegomierez/"><img src="linkedin.png" alt="linkedin icons"></a>
+                <a href="https://www.instagram.com/diego_mierez/?hl=es"><img src="instagram.png" alt="instagram icons"></a>
+                <a href="https://github.com/dmierez"><img src="github.png" alt="github icons"></a>
+            </div>
     </section>
     <footer class="footer">
         <p>Diseñado por @DiegoMierez 😉</p>
