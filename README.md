@@ -1,2 +1,5 @@
 # Curso-Desarrollo-Web
-Es repositorio estoy realizando el curso de Desarrollo Web Online de Platzi
+Este es el repositorio del curso de Desarrollo Web Online y Responsive Design de Platzi
+
+Puede ver el resultado haciendo click <a hrfef="https://dmierez.github.io/Diego-Mierez/">aquí</a>
+
