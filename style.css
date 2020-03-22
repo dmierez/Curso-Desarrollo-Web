@@ -9,6 +9,8 @@ ul, li {
 
 li {
     list-style: none;
+    margin: 10px 11px 12px;
+    height: inherit;
 }
 
 h1 {
@@ -16,14 +18,18 @@ h1 {
     line-height: 1.5;
     letter-spacing: -0.2px;
     color: white;
-    font-size: 30px;
+    font-size: 10px;
     margin-left: 20px;
     padding-top: 25px;
     margin-top: 0px;
 }
 
 h1 strong {
-    color: black;
+    color: #b2ff59;
+}
+
+.saludo {
+    font-size: 50px;
 }
 
 h2 {
@@ -36,17 +42,20 @@ h2 {
 }
 
 .header {
-    background: #121212;
-    padding-bottom: 5px;
+    background: #1a237e;
+    padding: 3px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 20px;
 }
 
 .log-display {
     display: flex;
     align-items: center;
+}
+
+.log-display div {
+    margin: 0px;
 }
 
 .logo {
@@ -58,6 +67,7 @@ h2 {
 .logo__image {
     width: 40px;
     height: 40px;
+    border: 1px solid white;
     border-radius: 50px;
     margin: 0px;
     padding: 0px;
@@ -73,21 +83,35 @@ h2 {
     height: inherit;
 }
 
-.menu li {
-    height: inherit;
-
-}
-
-.link {
+.link-nav {
     color: white;
     text-decoration: none;
     margin-right: 15px;
     height: inherit;
 }
 
-.link:hover {
+
+.link-nav:hover {
     text-decoration: underline;
     color: white;
+}
+
+.contacto-nav {
+    color: #1a237e;
+    text-decoration: none;
+    margin-right: 15px;
+    height: inherit;
+    padding: 7px 12px;
+    border-radius: 8px;
+    background: #b2ff59;
+}
+
+.contacto-nav:hover {
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 12px;
 }
 
 #main .carousel-inner img {
@@ -110,7 +134,7 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(26, 35, 126, 0.7);
     color: white;
     height: 300px;
 }
@@ -120,8 +144,14 @@ h2 {
     height: 100%;
 }
 
+/* .presentation {
+    height: 500px;
+} */
+
 .brumier {
-    font-size: 50px;
+    font-size: 35px;
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
 }
 
 .hero_title {
@@ -129,22 +159,25 @@ h2 {
 }
 
 .portafolio {
-    background: #FAFFFC;
+    background: #e8eaf6;
     /* margin: 20px 0px; */
 }
 
 .portafolio h2 {
-    padding: 15px 30px;
+    padding: 35px 30px;
+    color: #3f51b5;
+    margin: 0px;
 }
 
 .portafolio_detalles {
-    width: 500px;
+    width: 600px;
 }
 
 .proyectos__titulo {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .proyectos__tecnologias {
@@ -157,15 +190,20 @@ h2 {
 }
 
 .portafolio__proyectos {
-    border: 1px solid gray;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-right: 35px;
-    margin-left: 35px;
-    padding: 10px 20px;
+    height: 350px;
+    border: 1px solid #b2ff59;
+    border-radius: 20px;
+    margin: 0px 35px;
+    padding: 20px;
     background: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: #3f51b5;
+}
+
+.project-2 {
+    margin-top: 20px;
 }
 
 .proyectos__image {
@@ -174,26 +212,27 @@ h2 {
 }
 
 .event-title {
-    margin-top: 30px;
-    padding: 15px 30px;
-}
-
-.eventos {
-    margin-top: 35px;
+    color: #3f51b5;
+    padding: 35px 30px;
+    margin: 0px;
+    background: #e8eaf6;
 }
 
 .eventos {
     display: flex;
     justify-content: center;
+    background: #e8eaf6;
 }
 
+
 .experiencia {
-    border: 1px solid gray;
-    margin: 10px;
+    border: 1px solid #b2ff59;
+    margin: 0px 10px;
     width: 350px;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
+    background: white;
 }
 
 .experiencia img {
@@ -206,8 +245,8 @@ h2 {
     margin: 20px 30px;
     margin-top: -40px;
     padding: 20px;
-    background: #121212;
-    color: white;
+    background: #3f51b5;
+    color: #fff;
     position: relative;
 }
 
@@ -226,23 +265,27 @@ h2 {
 .contacto {
     padding: 30px 0px;
     text-align: center;
+    background: #e8eaf6;
 }
 
 .contacto h3 {
     font-size: 40px;
     margin: 0px;
+    color: #3f51b5;
 }
 
 .contacto p {
     font-size: 25px;
     margin-top: 5px;
     margin-bottom: 30px;
+    color: #3f51b5;
 }
 
 .mail {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #3f51b5;
 }
 
 .mail span {
@@ -262,7 +305,7 @@ h2 {
 
 .footer {
     padding: 20px 0px;
-    background: black;
+    background: #1a237e;
     color: white;
     font-size: 15px;
     font-weight: 600;
@@ -273,3 +316,4 @@ h2 {
     text-align: center;
     letter-spacing: 1px;
 }
+
